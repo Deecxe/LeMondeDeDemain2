@@ -10,6 +10,13 @@ body {
     background: var(--main-bg-color);
 }
 
+.splash-screen {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: var(--main-bg-color);
+}
+
 /* app bar */
 .app-bar {
     display: flex;
@@ -36,6 +43,15 @@ body {
     color: black;
 }
 
+.app-bar .focus {
+    color: var(--primary-color);
+}
+
 .app-bar a:hover {
     background: rgba(0, 0, 0, 0.1);
 }
+
+.page {
+    width: 60%;
+}
+
