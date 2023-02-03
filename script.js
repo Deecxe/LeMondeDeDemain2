@@ -1,15 +1,8 @@
-document.querySelector(".app-bar").innerHTML = `
-<div>
-	<div>
-		<img src="assets/logoMondeDeDemain.png" alt="logo">
-	</div>
-</div>
-<div>
-	<a href="">Accueil</a>
-	<a href="">En bref</a>
-	<a href="">Actualités</a>
-	<a href="">Dimensions</a>
-	<a href="">Medias</a>
-	<a href="">FAQ</a>
-</div>
-`
+fetch("components/app_bar.htm").then(function (response) {
+	// When the page is loaded convert it to text
+	return response.text()
+}).then((html) => {
+	document.querySelector(".app-bar").innerHTML = html;
+}).catch(function (err) {
+	console.log('Failed to fetch page: ', err);
+});
