@@ -52,6 +52,23 @@ body {
 }
 
 .page {
-    width: 60%;
+    padding: 0 20%;
 }
 
+@media screen and (max-width: 1600px) {
+    .page {
+        padding: 0 15%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .page {
+        padding: 0 10%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .page {
+        padding: 0 3%;
+    }
+}
