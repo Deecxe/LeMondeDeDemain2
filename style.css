@@ -1,0 +1,41 @@
+:root {
+    --main-bg-color: #f6f7f8;
+    --primary-color: #166687;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--main-bg-color);
+}
+
+/* app bar */
+.app-bar {
+    display: flex;
+    flex-direction: column;
+}
+
+.app-bar> :first-child {
+    display: flex;
+}
+
+.app-bar> :first-child> :first-child {
+    margin: auto;
+}
+
+.app-bar> :last-child {
+    border-top: 2px solid var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.app-bar a {
+    display: inline-block;
+    padding: 5px 15px;
+    text-decoration: none;
+    color: black;
+}
+
+.app-bar a:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
