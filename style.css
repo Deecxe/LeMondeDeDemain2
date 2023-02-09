@@ -72,3 +72,11 @@ body {
         padding: 0 3%;
     }
 }
+
+.white-text{
+    color: white;
+}
+
+.bg-blue{
+    background-color: var(--primary-color);
+}
