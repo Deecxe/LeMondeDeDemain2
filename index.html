@@ -8,6 +8,12 @@
     <title>Le monde de demain 2</title>
     <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+
 </head>
 
 <body>
@@ -42,7 +48,7 @@
                 </p>
             </div>
 
-            <div id="definition2">
+            <div id="definition3">
                 <p class="white-text">
                     Lorsque des citoyens, mus par des motivations éthiques, transgressent délibérément, de manière
                     publique, concertée et non violente, une loi en vigueur, pour exercer une pression visant à faire
@@ -57,11 +63,33 @@
     </div>
 
     <div class="page">
-
         <h1>Home</h1>
     </div>
 
+    <div class="owl-carousel owl-theme">
+        <div> Your Content </div>
+        <div> Your Content </div>
+        <div> Your Content </div>
+        <div> Your Content </div>
+        <div> Your Content </div>
+        <div> Your Content </div>
+        <div> Your Content </div>
+    </div>
+
     <script src="script.js"></script>
+
+
+
+      <script>
+        $(document).ready(function(){
+          $(".owl-carousel").owlCarousel();
+        });
+      </script>
+
+
 </body>
+
+
+
 
 </html>
