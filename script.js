@@ -5,9 +5,8 @@ fetch("components/app_bar.htm").then(function (response) {
 	document.querySelector(".app-bar").innerHTML = html;
 
 	// asign .focus to the good route
-	let origin = document.location.pathname;
 	document.querySelectorAll(".app-bar a").forEach(a => {
-		a.className = "focus";
+		if (a.href == document.location)a.className = "focus";
 	});
 
 	setTimeout(() => {
