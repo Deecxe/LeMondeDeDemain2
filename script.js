@@ -3,6 +3,13 @@ fetch("components/app_bar.htm").then(function (response) {
 	return response.text()
 }).then((html) => {
 	document.querySelector(".app-bar").innerHTML = html;
+
+	// asign .focus to the good route
+	let origin = document.location.pathname;
+	document.querySelectorAll(".app-bar a").forEach(a => {
+		a.className = "focus";
+	});
+
 	setTimeout(() => {
 		document.querySelector(".splash-screen").style.display = "none";
 	}, 300);
