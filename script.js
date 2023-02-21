@@ -6,7 +6,7 @@ fetch("components/app_bar.htm").then(function (response) {
 
 	// asign .focus to the good route
 	document.querySelectorAll(".app-bar a").forEach(a => {
-		if (a.href == document.location)a.className = "focus";
+		if (a.href == document.location) a.className = "focus";
 	});
 
 	setTimeout(() => {
