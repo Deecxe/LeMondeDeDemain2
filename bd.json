@@ -1,0 +1,102 @@
+[
+    {
+        "img_url": "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg",
+        "text": "Roland-Garros: une femme s'attache au filet durant la demi-finale",
+        "tags": [
+            {
+                "text": "Local",
+                "color": "#335EFF"
+            },
+            {
+                "text": "Climat",
+                "color": "#26B71B"
+            },
+            {
+                "text": "Sport",
+                "color": "#BB2222"
+            }
+        ]
+    },
+    {
+        "img_url": "https://img-19.commentcamarche.net/WNCe54PoGxObY8PCXUxMGQ0Gwss=/480x270/smart/d8c10e7fd21a485c909a5b4c5d99e611/ccmcms-commentcamarche/20456790.jpg",
+        "text": "The first one is one",
+        "tags": [
+            {
+                "text": "Monde",
+                "color": "#2232BB"
+            },
+            {
+                "text": "Politique",
+                "color": "#22BB7A"
+            }
+        ]
+    },
+    {
+        "img_url": "https://png.pngtree.com/illustrations/20190327/ourmid/pngtree-cure-starry-sky-night-sky-star-png-image_38228.jpg",
+        "text": "I would love to hear from you and all my friends.",
+        "tags": [
+            {
+                "text": "Local",
+                "color": "#335EFF"
+            },
+            {
+                "text": "Art",
+                "color": "#E0DD1C"
+            },
+            {
+                "text": "Jeune",
+                "color": "#941515"
+            }
+        ]
+    },
+    {
+        "img_url": "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg",
+        "text": "Roland-Garros: une femme s'attache au filet durant la demi-finale",
+        "tags": [
+            {
+                "text": "Local",
+                "color": "#335EFF"
+            },
+            {
+                "text": "Climat",
+                "color": "#26B71B"
+            },
+            {
+                "text": "Sport",
+                "color": "#BB2222"
+            }
+        ]
+    },
+    {
+        "img_url": "https://img-19.commentcamarche.net/WNCe54PoGxObY8PCXUxMGQ0Gwss=/480x270/smart/d8c10e7fd21a485c909a5b4c5d99e611/ccmcms-commentcamarche/20456790.jpg",
+        "text": "The first one is one",
+        "tags": [
+            {
+                "text": "Monde",
+                "color": "#2232BB"
+            },
+            {
+                "text": "Politique",
+                "color": "#22BB7A"
+            }
+        ]
+    },
+    {
+        "img_url": "https://png.pngtree.com/illustrations/20190327/ourmid/pngtree-cure-starry-sky-night-sky-star-png-image_38228.jpg",
+        "text": "I would love to hear from you and all my friends.",
+        "tags": [
+            {
+                "text": "Local",
+                "color": "#335EFF"
+            },
+            {
+                "text": "Art",
+                "color": "#E0DD1C"
+            },
+            {
+                "text": "Jeune",
+                "color": "#941515"
+            }
+        ]
+    }
+]
