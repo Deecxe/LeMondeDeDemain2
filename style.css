@@ -8,6 +8,7 @@ body {
   margin: 0;
   padding: 0;
   background: var(--main-bg-color);
+  font-family: 'Arimo', sans-serif;
 }
 
 .splash-screen {
@@ -114,4 +115,19 @@ body {
 
 .source {
   text-align: end;
+}
+
+.pas-touche {
+  position: relative;
+  padding: 30px;
+}
+.pas-touche img {
+  position: absolute;
+  border-radius: 50%;
+}
+.pas-touche .mask1 {
+  -webkit-mask-: url(https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fcdn.onlinewebfonts.com%2Fsvg%2Fimg_111929.png&f=1&nofb=1&ipt=1dae8bb3b46e7e9a2317cf561b76e1fa96d086106655dde24125c76602955ee0&ipo=images);
+  mask-image: url(https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fcdn.onlinewebfonts.com%2Fsvg%2Fimg_111929.png&f=1&nofb=1&ipt=1dae8bb3b46e7e9a2317cf561b76e1fa96d086106655dde24125c76602955ee0&ipo=images);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
 }
