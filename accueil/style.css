@@ -13,15 +13,11 @@
 .post-slide .post-img{
   position: relative;
   overflow: hidden;
-  border-radius: 10px;
-  margin: -12px 15px 8px 15px;
-  margin-left: -10px;
 }
 .post-slide .post-img img{
-  width: 100%;
-  height: auto;
   transform: scale(1,1);
   transition:transform 0.2s linear;
+  clip-path: circle(75px at center);
 }
 .post-slide:hover .post-img img{
   transform: scale(1.1,1.1);
@@ -52,6 +48,7 @@
   background:#fff;
   padding: 2px 20px 40px;
   border-radius: 15px;
+  text-align: center;
 }
 .post-slide .post-title a{
   font-size:15px;
