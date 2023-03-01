@@ -13,6 +13,7 @@
     aspect-ratio: 16 / 9;
     border-radius: 30px;
     z-index: 4;
+    position: relative;
 }
 
 .actualite div {
