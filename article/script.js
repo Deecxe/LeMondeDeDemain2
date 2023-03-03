@@ -1,4 +1,4 @@
-fetch("bd.json").then(function (response) {
+fetch(".bd.json").then(function (response) {
     // When the page is loaded convert it to text
     return response.text()
 }).then((json) => {
@@ -6,15 +6,16 @@ fetch("bd.json").then(function (response) {
 
     let res = JSON.parse(json);
 
+    news => {
     let newElement = document.createElement('div');
-    newElement.className = "actualite";
+    newElement.className = "contenu-article";
 
     newElement.innerHTML = `<img src="" alt=""><div><div>`;
 
     newElement.querySelector('img').src = news.img_url;
 
-    newElement.querySelector('div').innerHTML = news.content.paragraphe1;
-
+    newElement.querySelector('div').innerHTML = news.content[0];
+    };
 
 
         myList.appendChild(newElement);
