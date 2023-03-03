@@ -1,28 +1,80 @@
 /*  Caroussel */
 
+/* Cercle */
+.circle {
+  --radius: 100px;
+  --rotation: 30deg;
+  --rorationHover: 120deg;
+}
+
+.circle .top,
+.circle .bottom {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  width: calc(var(--radius) * 2);
+  height: var(--radius);
+  border: 1px solid #fff;
+  box-sizing: border-box;
+}
+
+
+
+.circle .top {
+  border-radius: var(--radius) var(--radius) 0 0;
+  transform: rotate(var(--rotation));
+  transform-origin: 50% 100%;
+}
+
+.circle .bottom {
+  border-radius: 0 0 var(--radius) var(--radius);
+  transform: rotate(var(--rotation));
+  transform-origin: 50% 0%;
+}
+
+.circle.top:hover , .circle.bottom:hover{
+    transform: rotate(var(--rorationHover));
+}
+
+.circle .bg {
+  position: absolute;
+  width: calc(var(--radius) * 2);
+  height: calc(var(--radius) * 2);
+  background-size: cover;
+  background-position: center center;
+  transform: rotate(calc(-1 * var(--rotation)));
+}
+
+.bottom .bg {
+  margin-top: calc(-1 * var(--radius));
+}
+
+#circle1 .top .bg{
+  background-image: url("../Image/Chat.png");
+}
+
+#circle1 .bottom.bg{
+  background-image: url("../Image/Couleur.png");
+}
+ 
+/* Carroussel */
+
 #news-slider{
   margin-top: 80px;
 }
-.post-slide{
+.circle{
   background: #fff;
   margin: 20px 15px 20px;
   border-radius: 15px;
   padding-top: 1px;
   box-shadow: 0px 14px 22px -9px #bbcbd8;
 }
-.post-slide .post-img{
+.circle .top .bottom{ 
   position: relative;
   overflow: hidden;
 }
-.post-slide .post-img img{
-  transform: scale(1,1);
-  transition:transform 0.2s linear;
-  clip-path: circle(75px at center);
-}
-.post-slide:hover .post-img img{
-  transform: scale(1.1,1.1);
-}
-.post-slide .over-layer{
+
+.circle .over-layer{
   width:100%;
   height:100%;
   position: absolute;
@@ -32,11 +84,11 @@
   background: linear-gradient(-45deg, rgba(6,190,244,0.75) 0%, rgba(45,112,253,0.6) 100%);
   transition:all 0.50s linear;
 }
-.post-slide:hover .over-layer{
+.circle:hover .over-layer{
   opacity:1;
   text-decoration:none;
 }
-.post-slide .over-layer i{
+.circle .over-layer i{
   position: relative;
   top:45%;
   text-align:center;
@@ -44,13 +96,13 @@
   color:#fff;
   font-size:25px;
 }
-.post-slide .post-content{
+.circle .post-content{
   background:#fff;
   padding: 2px 20px 40px;
   border-radius: 15px;
   text-align: center;
 }
-.post-slide .post-title a{
+.circle .post-title a{
   font-size:15px;
   font-weight:bold;
   color:#333;
@@ -58,39 +110,11 @@
   text-transform:uppercase;
   transition: all 0.3s ease 0s;
 }
-.post-slide .post-title a:hover{
+.circle .post-title a:hover{
   text-decoration: none;
   color:#3498db;
 }
-.post-slide .post-description{
-  line-height:24px;
-  color:#808080;
-  margin-bottom:25px;
-}
-.post-slide .post-date{
-  color:#a9a9a9;
-  font-size: 14px;
-}
-.post-slide .post-date i{
-  font-size:20px;
-  margin-right:8px;
-  color: #CFDACE;
-}
-.post-slide .read-more{
-  padding: 7px 20px;
-  float: right;
-  font-size: 12px;
-  background: #2196F3;
-  color: #ffffff;
-  box-shadow: 0px 10px 20px -10px #1376c5;
-  border-radius: 25px;
-  text-transform: uppercase;
-}
-.post-slide .read-more:hover{
-  background: #3498db;
-  text-decoration:none;
-  color:#fff;
-}
+
 .owl-controls .owl-buttons{
   text-align:center;
   margin-top:20px;

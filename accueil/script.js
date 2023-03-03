@@ -8,8 +8,6 @@ lsDef.forEach(def => {
 lsDef[defIndex].style.display = "block";
 
 setInterval(() => {
-    
-
     lsDef[defIndex].style.display = "none";
 
     defIndex++;
@@ -20,8 +18,6 @@ setInterval(() => {
 
 
 // Caroussel Rond
-
-
 $(document).ready(function() {
   $("#news-slider").owlCarousel({
       items : 5,

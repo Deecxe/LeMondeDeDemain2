@@ -19,7 +19,6 @@ body {
 }
 
 /* app bar */
-
 .app-bar {
   display: flex;
   flex-direction: column;
@@ -33,9 +32,11 @@ body {
   margin: auto;
 }
 
-.app-bar> :last-child {
+.app-bar .menu-items {
   border-top: 2px solid var(--primary-color);
   border-bottom: 2px solid var(--primary-color);
+  display: flex;
+  justify-content: space-between;
 }
 
 .app-bar a {
@@ -49,41 +50,35 @@ body {
   color: var(--primary-color);
 }
 
-.app-bar .focus * {
-  color: var(--primary-color);
-}
-
 .app-bar a:hover {
   background: rgba(0, 0, 0, 0.1);
 }
 
-/*Page */
-
-.page {
-  padding: 0 20%;
+/* loupe style */
+.loupe {
+  margin: 3px 0;
+  padding: 3px;
+  background: white;
+  border: 1px solid var(--primary-color);
+  border-radius: 50px;
+}
+.loupe input {
+  border: none;
+  background: transparent;
+  outline: none;
+}
+.loupe i {
+  color: var(--primary-color);
 }
 
-@media screen and (max-width: 1600px) {
+/* page */
+.page {
+  padding: 0 8px;
+}
+
+@media screen and (min-width: 1200px) {
   .page {
     padding: 0 15%;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  .page {
-    padding: 0 10%;
-  }
-}
-
-@media screen and (max-width: 450px) {
-
-  /* telephone */
-  .app-bar> :first-child img {
-    height: 50px;
-  }
-
-  .page {
-    padding: 0 3%;
   }
 }
 
@@ -111,17 +106,13 @@ body {
   text-align: end;
 }
 
-.pas-touche {
-  position: relative;
-  padding: 30px;
-}
-.pas-touche img {
-  position: absolute;
-  border-radius: 50%;
-}
-.pas-touche .mask1 {
-  -webkit-mask-: url(https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fcdn.onlinewebfonts.com%2Fsvg%2Fimg_111929.png&f=1&nofb=1&ipt=1dae8bb3b46e7e9a2317cf561b76e1fa96d086106655dde24125c76602955ee0&ipo=images);
-  mask-image: url(https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fcdn.onlinewebfonts.com%2Fsvg%2Fimg_111929.png&f=1&nofb=1&ipt=1dae8bb3b46e7e9a2317cf561b76e1fa96d086106655dde24125c76602955ee0&ipo=images);
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
+/* menu burgur */
+@media screen and (max-width: 640px) {
+  .app-bar {
+    opacity: 0.1;
+  }
+
+  /* .app-bar .menu-items :first-child {
+        
+  } */
 }

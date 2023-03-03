@@ -6,7 +6,14 @@
 
 .actualite {
     width: 370px;
+    transition: 0.5s scale;
 }
+
+.actualite:hover {
+    scale: 1.04;
+    transition: 0.5s scale;
+}
+
 
 .actualite img {
     width: 100%;
@@ -24,4 +31,7 @@
     border: 2px solid lightgray;
     border-radius: 30px;
     z-index: 3;
+
+    text-overflow: ellipsis;
 }
+

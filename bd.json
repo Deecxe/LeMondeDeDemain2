@@ -15,6 +15,15 @@
                 "text": "Sport",
                 "color": "#BB2222"
             }
+        ],
+        "content" :[
+            {
+                "paragraphe1":"Eveiller les consciences sur l’urgence, c’est la mission que s’est donnée Alizée : “C’est l’idée de se dire qu’aujourd’hui tous les yeux sont rivés sur Roland Garros et c’est l’idée de se dire : détournez votre regard et regardez la réalité en face de où est-ce qu’on est en train d’être amenés”. ",
+                "paragraphe2":"Un ras le bol de l’inaction climatique, notamment des 5 dernières années du gouvernement Macron. ",
+                "paragraphe3":"Qu'est ce que signifie “We have 1028 days left”?",
+                "paragraphe4":"Contrairement au Figaro qui a traduit cela par «Il nous reste 1028 jours à vivre», cela vient d’un tweet erroné de l’AFP qui disait lors de la sortie du dernier rapport du GIEC “l’humanité dispose de moins de trois années pour inverser la courbe des émissions de gaz à effet de serre“. C’est une erreur d’interprétation, puisque le rapport ne dit pas cela.",
+                "question":"Une autre manière de comprendre le sujet ? "
+            }
         ]
     },
     {
