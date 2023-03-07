@@ -1,0 +1,28 @@
+  
+  .tweet {
+    &-heart {
+      background-color: transparent;
+      background-image: url('https://abs.twimg.com/a/1492302959/img/animations/web_heart_animation.png');
+      border: none;    
+      cursor: pointer;
+      height: 100px;
+      outline: none;
+      width: 100px;
+      transition: all ease-out 800ms;
+      &.is-liked {
+        animation-name: like;
+        animation-duration: 800ms;    
+        animation-timing-function: steps(28);
+        animation-fill-mode: forwards;
+      }
+    }
+  }
+  
+  @keyframes like {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+     background-position: right; 
+    }
+  }

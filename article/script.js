@@ -1,8 +1,10 @@
 fetch('bd.json')
-
   .then(response => response.json())
   .then(data => {
-    const premierElement = data[0];
-    console.log(premierElement);
+    const imageUrl = data[0].img_url;
+    const img = document.createElement('img');
+    img.src = imageUrl;
+
+    document.body.appendChild(img);
   })
   .catch(error => console.error(error));
