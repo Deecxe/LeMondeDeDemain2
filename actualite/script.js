@@ -10,13 +10,25 @@ fetch("bd.json").then(function (response) {
         let newElement = document.createElement('div');
         newElement.className = "actualite";
 
-        newElement.innerHTML = `<img src="" alt=""><div><div>`;
+        let newImg = document.createElement('img');
+        newImg.src = news.img_url;
+        newImg.alt = "";
 
-        newElement.querySelector('img').src = news.img_url;
+        let newDiv = document.createElement('div');
+        newDiv.innerHTML = news.text;
 
-        newElement.querySelector('div').innerHTML = news.text;
+        /*let newTag = document.createElement('div');
+        newTag.innerHTML = news.tags;*/
 
+        newElement.appendChild(newImg);
+        newElement.appendChild(newDiv);
+        //newElement.appendChild(newTag);
 
+        // Ajouter un événement de clic sur l'image
+        newImg.addEventListener("click", function() {
+            // Code à exécuter lors du clic sur l'image
+            document.location.href="article.html";
+        });
 
         myList.appendChild(newElement);
     });

@@ -1,6 +1,7 @@
 [
     {
-        "img_url": "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg",
+        "id": 1,
+        "img_url": "./Image/Rolland.png",
         "text": "Roland-Garros: une femme s'attache au filet durant la demi-finale",
         "tags": [
             {
@@ -27,8 +28,28 @@
         ]
     },
     {
-        "img_url": "https://img-19.commentcamarche.net/WNCe54PoGxObY8PCXUxMGQ0Gwss=/480x270/smart/d8c10e7fd21a485c909a5b4c5d99e611/ccmcms-commentcamarche/20456790.jpg",
+        "id": 2,
+        "img_url": "./Image/First.png",
         "text": "The first one is one",
+        "tags": [
+            {
+                "text": "Local",
+                "color": "#335EFF"
+            },
+            {
+                "text": "Jeune",
+                "color": "#941515"
+            },
+            {
+                "text": "Art",
+                "color": "#E0DD1C"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "img_url": "./Image/Gouvernement.png",
+        "text": "Nous ne supportons plus le gouvernement",
         "tags": [
             {
                 "text": "Monde",
@@ -41,25 +62,8 @@
         ]
     },
     {
-        "img_url": "https://png.pngtree.com/illustrations/20190327/ourmid/pngtree-cure-starry-sky-night-sky-star-png-image_38228.jpg",
-        "text": "I would love to hear from you and all my friends.",
-        "tags": [
-            {
-                "text": "Local",
-                "color": "#335EFF"
-            },
-            {
-                "text": "Art",
-                "color": "#E0DD1C"
-            },
-            {
-                "text": "Jeune",
-                "color": "#941515"
-            }
-        ]
-    },
-    {
-        "img_url": "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg",
+        "id": 4,
+        "img_url": "./Image/Rolland.png",
         "text": "Roland-Garros: une femme s'attache au filet durant la demi-finale",
         "tags": [
             {
@@ -74,11 +78,40 @@
                 "text": "Sport",
                 "color": "#BB2222"
             }
+        ],
+        "content" :[
+            {
+                "paragraphe1":"Eveiller les consciences sur l’urgence, c’est la mission que s’est donnée Alizée : “C’est l’idée de se dire qu’aujourd’hui tous les yeux sont rivés sur Roland Garros et c’est l’idée de se dire : détournez votre regard et regardez la réalité en face de où est-ce qu’on est en train d’être amenés”. ",
+                "paragraphe2":"Un ras le bol de l’inaction climatique, notamment des 5 dernières années du gouvernement Macron. ",
+                "paragraphe3":"Qu'est ce que signifie “We have 1028 days left”?",
+                "paragraphe4":"Contrairement au Figaro qui a traduit cela par «Il nous reste 1028 jours à vivre», cela vient d’un tweet erroné de l’AFP qui disait lors de la sortie du dernier rapport du GIEC “l’humanité dispose de moins de trois années pour inverser la courbe des émissions de gaz à effet de serre“. C’est une erreur d’interprétation, puisque le rapport ne dit pas cela.",
+                "question":"Une autre manière de comprendre le sujet ? "
+            }
         ]
     },
     {
-        "img_url": "https://img-19.commentcamarche.net/WNCe54PoGxObY8PCXUxMGQ0Gwss=/480x270/smart/d8c10e7fd21a485c909a5b4c5d99e611/ccmcms-commentcamarche/20456790.jpg",
+        "id": 5,
+        "img_url": "./Image/First.png",
         "text": "The first one is one",
+        "tags": [
+            {
+                "text": "Local",
+                "color": "#335EFF"
+            },
+            {
+                "text": "Jeune",
+                "color": "#941515"
+            },
+            {
+                "text": "Art",
+                "color": "#E0DD1C"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "img_url": "./Image/Gouvernement.PNG",
+        "text": "Nous ne supportons plus le gouvernement",
         "tags": [
             {
                 "text": "Monde",
@@ -87,24 +120,6 @@
             {
                 "text": "Politique",
                 "color": "#22BB7A"
-            }
-        ]
-    },
-    {
-        "img_url": "https://png.pngtree.com/illustrations/20190327/ourmid/pngtree-cure-starry-sky-night-sky-star-png-image_38228.jpg",
-        "text": "I would love to hear from you and all my friends.",
-        "tags": [
-            {
-                "text": "Local",
-                "color": "#335EFF"
-            },
-            {
-                "text": "Art",
-                "color": "#E0DD1C"
-            },
-            {
-                "text": "Jeune",
-                "color": "#941515"
             }
         ]
     }
