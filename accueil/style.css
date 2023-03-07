@@ -1,107 +1,39 @@
 
-/* Cercle */
-.circle {
-  --radius: 100px;
-  --rotation: 30deg;
-  --rorationHover: 120deg;
-}
-
-.circle .top,
-.circle .bottom {
-  display: block;
-  position: relative;
-  overflow: hidden;
-  width: calc(var(--radius) * 2);
-  height: var(--radius);
-  border: 1px solid #fff;
-  box-sizing: border-box;
-}
-
-
-
-.circle .top {
-  border-radius: var(--radius) var(--radius) 0 0;
-  transform: rotate(var(--rotation));
-  transform-origin: 50% 100%;
-}
-
-.circle .bottom {
-  border-radius: 0 0 var(--radius) var(--radius);
-  transform: rotate(var(--rotation));
-  transform-origin: 50% 0%;
-}
-
-.circle.top:hover , .circle.bottom:hover{
-    transform: rotate(var(--rorationHover));
-}
-
-.circle .bg {
-  position: absolute;
-  width: calc(var(--radius) * 2);
-  height: calc(var(--radius) * 2);
-  background-size: cover;
-  background-position: center center;
-  transform: rotate(calc(-1 * var(--rotation)));
-}
-
-.bottom .bg {
-  margin-top: calc(-1 * var(--radius));
-}
-
-#circle1 .top .bg{
-  background-image: url("../Image/Chat.png");
-}
-
-#circle1 .bottom.bg{
-  background-image: url("../Image/Couleur.png");
-}
- 
-/* Carroussel */
-
 #news-slider{
   margin-top: 80px;
 }
-.circle{
-  background: #fff;
+
+.col-md-12{
+  background-color: #f6f7f8;
+}
+.post-title{
+  text-align: center;
+}
+
+.post-slide{
+  background: #f6f7f8;
   margin: 20px 15px 20px;
   border-radius: 15px;
   padding-top: 1px;
-  box-shadow: 0px 14px 22px -9px #bbcbd8;
 }
-.circle .top .bottom{ 
+.post-slide .post-img{
+
   position: relative;
   overflow: hidden;
+  border-radius: 10px;
+  margin: -12px 15px 8px 15px;
+  margin-left: -10px;
+}
+.post-slide .post-img img{
+  width: 250px;
+  height: 250px;
+  transform: scale(1,1);
+  transition:transform 0.2s linear;
 }
 
-.circle .over-layer{
-  width:100%;
-  height:100%;
-  position: absolute;
-  top:0;
-  left:0;
-  opacity:0;
-  background: linear-gradient(-45deg, rgba(6,190,244,0.75) 0%, rgba(45,112,253,0.6) 100%);
-  transition:all 0.50s linear;
-}
-.circle:hover .over-layer{
-  opacity:1;
-  text-decoration:none;
-}
-.circle .over-layer i{
-  position: relative;
-  top:45%;
-  text-align:center;
-  display: block;
-  color:#fff;
-  font-size:25px;
-}
-.circle .post-content{
-  background:#fff;
-  padding: 2px 20px 40px;
-  border-radius: 15px;
+
+.post-slide .post-title a{
   text-align: center;
-}
-.circle .post-title a{
   font-size:15px;
   font-weight:bold;
   color:#333;
@@ -109,7 +41,7 @@
   text-transform:uppercase;
   transition: all 0.3s ease 0s;
 }
-.circle .post-title a:hover{
+.post-slide .post-title a:hover{
   text-decoration: none;
   color:#3498db;
 }
@@ -119,7 +51,7 @@
   margin-top:20px;
 }
 .owl-controls .owl-buttons .owl-prev{
-  background: #fff;
+  background: #dfe0e1;
   position: absolute;
   top:-13%;
   left:15px;
@@ -129,7 +61,7 @@
   transition: background 0.5s ease 0s;
 }
 .owl-controls .owl-buttons .owl-next{
-  background: #fff;
+  background: #dfe0e1;
   position: absolute;
   top:-13%;
   right: 15px;
