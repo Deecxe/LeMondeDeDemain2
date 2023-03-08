@@ -25,6 +25,12 @@ body {
   flex-direction: column;
 }
 
+.fa-pos{
+  position: relative;
+  right: 100%;
+  margin: auto 0;
+}
+
 .app-bar> :first-child {
   display: flex;
 }
