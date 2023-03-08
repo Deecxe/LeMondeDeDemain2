@@ -22,6 +22,11 @@ fetch('bd.json')
       newElement.appendChild(newP);
     }
 
+    let question = data[0]['contenu'][0]['question'];
+    let newQ = document.createElement('h2');
+    newQ.innerHTML = question;
+    newElement.appendChild(newQ);
+
 
     const imageUrl = data[0].img_url;
     const img = document.createElement('img');
